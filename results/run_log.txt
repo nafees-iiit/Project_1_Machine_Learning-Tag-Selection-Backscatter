@@ -1,0 +1,17 @@
+Dataset: 64000 samples, 13 features, 4 classes
+Train = 51200, Validation = 12800
+Random Forest          trained in  25.0 s | validation accuracy = 62.34 %
+Neural Network (MLP)   trained in   4.4 s | validation accuracy = 63.77 %
+
+Secrecy Outage Probability (lower is better):
+ SNR_dB  OTS (perfect CSI, genie)  Plug-in OTS (noisy CSI)  SOTS (main link only)  RTS (random)  ML: Random Forest  ML: Neural Network
+      0                    0.4264                   0.5275                 0.4870        0.8076             0.4993              0.4733
+      6                    0.0965                   0.2394                 0.2397        0.5521             0.1898              0.1805
+     12                    0.0330                   0.1615                 0.1875        0.4258             0.1115              0.1114
+     18                    0.0225                   0.1475                 0.1724        0.3847             0.0903              0.0890
+     24                    0.0210                   0.1516                 0.1799        0.3762             0.0925              0.0898
+     30                    0.0200                   0.1452                 0.1778        0.3734             0.0902              0.0875
+Random Forest         :  34.16 microseconds per decision
+Neural Network (MLP)  :   1.23 microseconds per decision
+
+All results saved in the 'results' folder.
